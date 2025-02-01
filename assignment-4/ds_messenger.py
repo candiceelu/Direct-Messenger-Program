@@ -80,14 +80,4 @@ class DirectMessenger:
                 return resp.message
         except:
           return False
-
-if __name__ == '__main__':
-    recipient = DirectMessenger('168.235.86.101', 'mathexprssions43', 'passw')
-    sender = DirectMessenger('168.235.86.101', 'commoncore43', 'passw')
-
-    s = sender.send('test message', 'mathexprssions43')
-    print(s)
-
-    r = recipient.retrieve_new()
-    print(r)
-    print(type(r))
+      
